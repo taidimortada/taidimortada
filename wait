@@ -1,14 +1,1 @@
-from pybricks.hubs import InventorHub
-from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor
-from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
-from pybricks.robotics import DriveBase
-from pybricks.tools import wait, StopWatch
 
-hub = InventorHub()
-left_motor=Motor(Port.A,Direction.COUNTERCLOCKWISE)
-right_motor=Motor(Port.B)
-mindcraft=DriveBase(left_motor,right_motor, wheel_diameter=56, axle_track=117)
-mindcraft.use_gyro(True)
-mindcraft.straight(1000)
-wait(1000)
-mindcraft.curve(250,90)
